@@ -1,0 +1,21 @@
+<h1>Edit customer</h1>
+
+<div ng-if="errormessages" class="alert alert-danger" role="alert">{{errormessages}}</div>
+
+<form>
+    <div class="form-group">
+        <label for="firstName">firstName</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter firstName" ng-model="customer.firstname">
+    </div>
+    <div class="form-group">
+        <label for="lastName">lastName</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Enter lastName" ng-model="customer.lastname">
+    </div>
+    <div class="form-group">
+        <label for="email">email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="customer.email">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="saveCustomer()">Save</button>
+</form>
+
+<br/>

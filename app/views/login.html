@@ -1,0 +1,22 @@
+<h1>Login</h1>
+
+<div ng-if="errormessages" class="alert alert-danger" role="alert">{{errormessages}}</div>
+
+<form>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username" ng-model="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" ng-model="password">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" ng-model="permanent"> Permanent login
+        </label>
+    </div>
+    <button class="btn btn-default" type="submit" name="submit" value="Submit" ng-click="loginPost()">Submit</button>
+</form>
+
+<br/>

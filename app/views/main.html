@@ -1,0 +1,27 @@
+
+<h1>Customer List</h1>
+<br/>
+
+
+
+<table class="table table-hover customers">
+    <thead>
+    <th>ID</th>
+    <th>E-Mail</th>
+    <th>Name</th>
+    <th>Website ID</th>
+    <th>Store ID</th>
+    <th>Actions</th>
+    </thead>
+    <tr ng-repeat="customer in customers.items">
+        <td>{{customer.id}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.firstname}} {{customer.lastname}}</td>
+        <td>{{customer.website_id}}</td>
+        <td>{{customer.store_id}}</td>
+        <td><a href="#/customer/edit/{{customer.id}}"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+        </td>
+    </tr>
+</table>
+
+<br/>
